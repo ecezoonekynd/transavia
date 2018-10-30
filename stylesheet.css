@@ -89,7 +89,6 @@ input {
     font: inherit;
     border: 0.0625em solid;
     border-color: #cecece;
-    transition: 1s;
     background-color: #fff;
     margin-bottom: 1em;
 }
@@ -100,7 +99,12 @@ label {
     display: block;
 }
 
-#inlog input:valid {
+input[type=email]:valid {
+    border-color: #01d66c;
+    background-color: lightpink;
+}
+
+input[type=password]:valid {
     border-color: #01d66c;
     background-color: lightgreen;
 }
@@ -117,7 +121,6 @@ input[type=submit] {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    transition: 1s;
 }
 
 
