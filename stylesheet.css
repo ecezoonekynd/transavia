@@ -1,0 +1,599 @@
+/* @font-face {
+    font-family: 'nexa_lightregular';
+    src: url('nexa_light-webfont.woff2') format('woff2'),
+         url('nexa_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'nexa_boldregular';
+    src: url('nexa_bold-webfont.woff2') format('woff2'),
+         url('nexa_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}*/
+
+/* Gekozen font & algemene styling van de body*/
+#inlog {
+    font-family: "Mark Pro", sans-serif;
+    background-image: url(img/background2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* Witte rand bovenaan */
+header {
+    background-color: white;
+    padding: .5em;
+}
+
+header img {
+    width: 9em;
+    height: 2em;
+    margin: .5em;
+}
+
+/* Welkoms tekst */
+
+#inlog h1 {
+    display: grid;
+    border-radius: .5em;
+    background-color: white;
+    margin: .2em;
+    color: #01d66c;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 88%;
+    transition: 1s;
+}
+
+fieldset {
+    border-style: none;
+    background-color: white;
+    margin: 0;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+/* Algemene styling van het formulier*/
+
+#inlog form:first-of-type {
+    display: grid;
+    background-color: white;
+    padding: .5em;
+    border-radius: .5em;
+    margin: 1em;
+    color: #4d4d4d;
+    transition: 1s;
+    margin-left: auto;
+    margin-right: auto;
+    width: 88%;
+}
+
+/* De grotte van de tekstvlakken */
+
+input {
+    -webkit-appearance: none;
+    display: block;
+    width: 93%;
+    font-size: 1em;
+    padding: .5em;
+    font: inherit;
+    border: 0.0625em solid;
+    border-color: #cecece;
+    transition: 1s;
+    background-color: #fff;
+    margin-bottom: 1em;
+}
+
+
+#inlog input,
+label {
+    display: block;
+}
+
+#inlog input:valid {
+    border-color: #01d66c;
+    background-color: lightgreen;
+}
+
+/* Styling knopje inloggen */
+
+input[type=submit] {
+    border: 0;
+    background-color: #ff0953;
+    color: white;
+    padding: 1em;
+    border-radius: 1em;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 1s;
+}
+
+
+
+/* groene balk : account aanmaken*/
+
+#inlog a:first-of-type {
+    text-decoration: none;
+    color: white;
+    background: #01d66c;
+    border-radius: .5em;
+    transition: 1s;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* blauwe balk : doorgaan zonder account*/
+#inlog a {
+    text-decoration: none;
+    color: white;
+    background: #1c0092;
+    margin: 1.5em;
+    display: block;
+    border-radius: 0.5em;
+    padding: .5em;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 1s;
+    width: 88%;
+}
+
+
+/* pijltjes achter de teksten */
+#inlog a::after {
+    display: block;
+    content: "";
+    width: 2em;
+    height: 2em;
+    background-image: url(img/pijltje-21.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* ACCOUNT AANMAKEN */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+
+body {
+    font-family: "Mark Pro", sans-serif;
+    background-color: #01d66c;
+    margin: 0em;
+    padding-top: 1rem;
+}
+
+#account input:valid {
+    border-color: #01d66c;
+    background-color: lightgreen;
+}
+
+#account img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -7em;
+}
+
+form,
+img {
+    width: 80%
+}
+
+/* Algemene styling van het formulier*/
+
+form {
+    display: grid;
+    background-color: white;
+    padding-top: 6em;
+    border-radius: .5em;
+    margin: 1em auto;
+    color: #4d4d4d;
+}
+
+
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+               /* OVERZICHTSPAGINA */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+
+.active {
+    visibility: hidden;
+    position: absolute;
+}
+
+
+#overzicht {
+    margin: 0;
+    background-color: #f0dfce;
+    padding-top: 0;
+    transition: 1s;
+}
+
+/* Witte rand bovenaan */
+header {
+    padding: 0;
+    max-width: 100%;
+}
+
+header nav {
+    background-color: #fff;
+    text-decoration: none;
+    padding: 0;
+}
+
+/*Images in de nav naar beneden*/
+header nav img {
+    margin-top: 1em;
+    margin-right: 1em;
+    height: 2em;
+    width: 2em;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-top: 0;
+}
+
+nav ul li:first-child{
+    justify-content: flex-start;
+    margin-right: auto;
+}
+
+legend {
+    color: 4d4d4d;
+    font-size: 1.2em;
+}
+
+
+main form {
+    background-color: white;
+    color: 4d4d4d;
+    border-radius: 1em;
+    padding: 0;
+    width: 92%;
+}
+
+#overzicht input {
+    color: white;
+    text-align: left;
+}
+
+.filter {
+    font-size: 2.5em;
+    margin-top: .3em;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 1em;
+    font-size: 1.2em;
+    padding: .5em;
+    font: inherit;
+    text-align: center;
+    color: #4d4d4d;
+    min-width: 10em;
+    margin-left: 1em;
+}
+
+.sorteren {
+    font-size: 2.5em;
+    margin-top: .3em;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 1em;
+    font-size: 1.2em;
+    padding: .5em;
+    font: inherit;
+    text-align: center;
+    color: #4d4d4d;
+    min-width: 10em;
+    margin-left: 1em;
+
+}
+
+h2 {
+    padding-top: 1em;
+    text-align: center;
+    font-size: 1.2em;
+    color: 4d4d4d;
+    transition: 1s;
+}
+
+h3 {
+    text-align: center;
+    color: 4d4d4d;
+    transition: 1s;
+}
+
+div {
+    background-color: white;
+    border-radius: 1em;
+    max-width: 92%;
+    margin-right: auto;
+    margin-left: auto;
+    transition: 1s;
+}
+
+section {
+    background-color: white;
+    max-width: 92%;
+    border-radius: 1em;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#overzicht input[type=submit] {
+    background-color: #ff0953;
+    color: white;
+    border-radius: 1em;
+    font-size: .8em;
+    font: inherit;
+    text-align: center;
+    max-height: 5em;
+    max-width: 10em;
+}
+
+fieldset input[type=range] {
+    width: 30%;
+}
+
+div span {
+    display: flex;
+    justify-content: center;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.blauw {
+    background-color: #1c0092;
+}
+
+
+span button {
+    background-color: #01d66c;
+    color: white;
+    border-radius: 1em;
+    padding: .5em;
+    font: inherit;
+    font-size: .8em;
+}
+
+.alle {
+    display: block;
+    height: 14em;
+    width: 19em;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+}
+
+#overzicht input {
+    display: inline-grid;
+    justify-content: center;
+    -webkit-appearance: none;
+    padding: 0;
+    font-size: 1em;
+    padding: .5em;
+    font: inherit;
+}
+
+#overzicht input[type=checkbox] {
+    width: 2em;
+    height: 2em;
+}
+
+#overzicht input:checked {
+    background-color: #ff0953;
+}
+
+p:first-of-type {
+    text-align: left;
+    color: #4d4d4d;
+    position: absolute;
+    margin-left: 2.5em;
+}
+
+p {
+    text-align: right;
+    color: #4d4d4d;
+    position: relative;
+    margin-right: 2.5em;
+}
+
+.reactie {
+    text-decoration: none;
+    color: white;
+    background-color: #ff0953;
+    padding: .5em;
+    border-radius: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 18em;
+    max-height: 7em;
+    text-align: center;
+}
+
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* Verhalen pagina*/
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+
+.iconen {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.iconen button {
+    border: none;
+    height: 7em;
+    width: 7em;
+    transition: 1s;
+}
+
+article>img{
+    display: block;
+    min-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 1s;
+}
+
+#overzicht input[type=text]{
+    background-color: #f0dfce;
+    display: block;
+    width: 70%;
+    height: 2em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#overzicht input[type=submit]{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 1s;
+}
+
+#overzicht label {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: .5em;
+    background-color: white;}
+
+textarea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    width: 70%;
+    height: 8em;
+}
+
+
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* MEDIA INLOGGEN*/
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+
+/* Ipad */
+@media (min-width:45em) {
+
+    #inlog form:first-of-type,
+    #inlog h1,
+    #inlog a {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .filter {
+        margin-left: 2em;
+    }
+
+   article>img {
+        width: 40%;
+    }
+
+    #overzicht input[type=text]{
+        width: 55%;
+    }
+
+    textarea {
+        width: 55%;
+    }
+}
+
+
+/* Desktop */
+@media (min-width:70em) {
+
+    #inlog form:first-of-type,
+    #inlog h1,
+    #inlog a {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+     #overzicht input[type=text]{
+        width: 55%;
+    }
+
+}
+
+/* Desktop*/
+@media (min-width:70em) {
+    form {
+        width: 50%;
+        padding-top: 14.5em;
+    }
+
+    #account img {
+        width: 50%;
+        height: 16em;
+        margin-bottom: -15em;
+    }
+}
+
+/* Desktop*/
+@media (min-width:70em) {
+    .filter {
+        margin-left: 2.5em;
+    }
+
+ section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    button {
+        min-width: 20em;
+        min-height: 4em;
+    }
+
+    main form {
+        width: 50%;
+
+    }
+
+    article>img {
+        width: 0%;
+    }
+
+    .iconen button {
+        min-width: 7em;
+        min-height: 7em;
+    }
+
+textarea {
+        width: 58%;
+    }
+}
