@@ -109,6 +109,8 @@ input[type=password]:valid {
     background-color: lightgreen;
 }
 
+
+
 /* Styling knopje inloggen */
 
 input[type=submit] {
@@ -475,7 +477,6 @@ article>img{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    transition: 1s;
 }
 
 #overzicht label {
